@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="sv" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grepp &amp; Gummi Kumla | Däckbyte, Skifte &amp; Balansering | Öppet 07–22</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description"
+    content="Smidigt däckbyte och hjulbalansering i Kumla. Grepp &amp; Gummi på Västra Drottninggatan 23 har öppet 07:00–22:00 alla dagar i veckan. Boka din tid enkelt online!" />
+  <meta name="keywords"
+    content="däckbyte Kumla, hjulskifte Kumla, balansering Kumla, däckverkstad Kumla, Grepp och Gummi, Västra Drottninggatan 23, däckservice Närke, boka hjulskifte kumla" />
+  <meta name="author" content="Grepp &amp; Gummi" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://greppochgummi.se/" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="business.business" />
+  <meta property="og:title" content="Grepp &amp; Gummi Kumla | Däckbyte &amp; Däckservice | Öppet 07–22" />
+  <meta property="og:description"
+    content="Snabbt och säkert hjulskifte på Västra Drottninggatan 23 i Kumla. Vi har öppet 07:00–22:00 alla dagar i veckan. Boka din tid enkelt online!" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="og:url" content="https://greppochgummi.se/" />
+  <meta property="og:site_name" content="Grepp &amp; Gummi" />
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Grepp &amp; Gummi Kumla | Däckbyte &amp; Däckservice" />
+  <meta name="twitter:description"
+    content="Öppet alla dagar 07:00–22:00. Hjulskifte, balansering och däckservice på Västra Drottninggatan 23 i Kumla." />
+  <meta name="twitter:image"
+    content="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Favicon (Inline SVG Automotive Badge) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23161A20'/%3E%3Ccircle cx='16' cy='16' r='11' stroke='%23E5A93C' stroke-width='3' fill='none' stroke-dasharray='5 2'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23E5A93C'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Montserrat (Automotive Headings) & Inter (Clean UI Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,700;0,800;0,900;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#E5A93C',       /* Warm authoritative workshop amber-gold */
+              amber: '#D4922A',        /* Deeper amber accent */
+              yellowHover: '#D6992C',  /* Hover state */
+              dark: '#1E232B',         /* Softened dark graphite */
+              asphalt: '#161A20',      /* Refined charcoal asphalt */
+              charcoal: '#2D3540',     /* Body text slate */
+              light: '#F4F5F7',        /* Clean off-white surface */
+              border: '#2A323D'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Montserrat', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'yellow-glow': '0 6px 20px -4px rgba(229, 169, 60, 0.28)',
+            'card': '0 4px 20px -2px rgba(15, 23, 42, 0.06)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Subtle tire tread diagonal pattern */
+    .tread-pattern {
+      background-color: #161A20;
+      background-image:
+        repeating-linear-gradient(-45deg,
+          rgba(229, 169, 60, 0.025) 0px,
+          rgba(229, 169, 60, 0.025) 12px,
+          transparent 12px,
+          transparent 24px),
+        radial-gradient(circle at 80% 20%, rgba(229, 169, 60, 0.08), transparent 60%);
+    }
+
+    /* Workshop sign replica tread stripes */
+    .sign-tread-stripe {
+      background: repeating-linear-gradient(135deg,
+          #E5A93C 0px,
+          #E5A93C 6px,
+          #161A20 6px,
+          #161A20 11px);
+    }
+
+    /* Custom scrollbar for time slot container */
+    .slots-scroll::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    .slots-scroll::-webkit-scrollbar-track {
+      background: #F1F5F9;
+      border-radius: 9999px;
+    }
+
+    .slots-scroll::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 9999px;
+    }
+
+    .slots-scroll::-webkit-scrollbar-thumb:hover {
+      background: #94A3B8;
+    }
+
+    /* Pulse ring for live open status */
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.85);
+        opacity: 0.75;
+      }
+
+      70% {
+        transform: scale(1.75);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1.75);
+        opacity: 0;
+      }
+    }
+
+    .live-dot::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 9999px;
+      background-color: #34D399;
+      animation: pulse-ring 2.4s infinite;
+    }
+  </style>
+
+  <!-- Schema.org Structured Data (JSON-LD) for Local Automotive Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Grepp & Gummi",
+    "image": "https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=1200&q=80",
+    "@id": "https://greppochgummi.se/#business",
+    "url": "https://greppochgummi.se/",
+    "telephone": "+46706574948",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Västra Drottninggatan 23",
+      "addressLocality": "Kumla",
+      "postalCode": "692 34",
+      "addressCountry": "SE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 59.1272,
+      "longitude": 15.1436
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "07:00",
+        "closes": "22:00"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body
+  class="bg-brand-light text-brand-charcoal font-sans antialiased selection:bg-brand-yellow selection:text-brand-asphalt pb-20 md:pb-0">
+
+  <!-- =====================================================================
+       1. TOP UTILITY BAR (Customer-Facing Only)
+  ====================================================================== -->
+  <div class="bg-brand-asphalt text-slate-200 border-b border-slate-800/80 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-2">
+
+      <!-- Left: Quick Contact Phone & Live Open Status -->
+      <div class="flex items-center gap-4">
+        <a href="tel:0706574948"
+          class="group inline-flex items-center gap-2 font-bold text-brand-yellow hover:text-amber-300 transition-colors">
+          <span
+            class="w-6 h-6 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 flex items-center justify-center group-hover:bg-brand-yellow group-hover:text-brand-asphalt transition-colors">
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+          </span>
+          <span class="tracking-wide">070-657 49 48</span>
+        </a>
+        <span class="hidden sm:inline-block text-slate-700">|</span>
+        <span class="inline-flex items-center gap-1.5 text-slate-300 text-xs">
+          <span id="open-status-dot" class="relative inline-block w-2 h-2 rounded-full bg-emerald-400 live-dot"></span>
+          <span id="open-status-text" class="font-medium text-emerald-400/90">Öppet idag: 07:00–22:00</span>
+        </span>
+      </div>
+
+      <!-- Right: Address & Quick Navigation -->
+      <div class="flex items-center gap-4 sm:gap-6 ml-auto sm:ml-0">
+        <div class="hidden md:inline-flex items-center gap-1.5 text-slate-300 font-medium">
+          <svg class="w-4 h-4 text-brand-yellow shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>Öppet alla dagar: <strong class="text-brand-yellow font-semibold">07:00–22:00</strong></span>
+        </div>
+
+        <a href="#kontakt" class="inline-flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors">
+          <svg class="w-4 h-4 text-brand-yellow shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <span>Västra Drottninggatan 23, Kumla</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       2. MAIN NAVIGATION HEADER (Sticky)
+  ====================================================================== -->
+  <header id="site-header"
+    class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-slate-800/80 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+
+      <!-- Brand Logo (Directly styled after the yellow & black Kumla workshop signage) -->
+      <a href="#" class="group flex items-center gap-3 focus:outline-none" aria-label="Grepp &amp; Gummi Startsida">
+        <div
+          class="bg-brand-yellow text-brand-asphalt px-3.5 py-1.5 rounded-lg border-2 border-brand-yellow shadow-sm group-hover:scale-[1.02] transition-transform">
+          <div class="flex items-center gap-2">
+            <!-- Custom SVG Wheel Icon -->
+            <svg class="w-6 h-6 text-brand-asphalt shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2">
+              <circle cx="12" cy="12" r="9" />
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 3v6M12 15v6M3 12h6M15 12h6M5.6 5.6l4.2 4.2M14.2 14.2l4.2 4.2M18.4 5.6l-4.2 4.2M9.8 14.2l-4.2 4.2" />
+            </svg>
+            <div>
+              <span class="block font-display font-black text-lg sm:text-xl tracking-tight leading-none">
+                GREPP &amp; GUMMI
+              </span>
+              <span class="block text-[10px] font-extrabold uppercase tracking-wider text-brand-asphalt/90 mt-0.5">
+                Däck &amp; Fälg • Skifte • Balansering
+              </span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2" aria-label="Huvudmeny">
+        <a href="#tjanster"
+          class="px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-brand-yellow hover:bg-slate-800/60 transition-colors">
+          Tjänster
+        </a>
+        <a href="#om-oss"
+          class="px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-brand-yellow hover:bg-slate-800/60 transition-colors">
+          Om oss
+        </a>
+        <a href="#dackguide"
+          class="px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-brand-yellow hover:bg-slate-800/60 transition-colors">
+          Däckguide
+        </a>
+        <a href="#boka-tid"
+          class="px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-brand-yellow hover:bg-slate-800/60 transition-colors">
+          Boka tid
+        </a>
+        <a href="#kontakt"
+          class="px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-brand-yellow hover:bg-slate-800/60 transition-colors">
+          Kontakt &amp; Hitta hit
+        </a>
+      </nav>
+
+      <!-- Desktop CTA Buttons -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="tel:0706574948"
+          class="hidden lg:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-700 text-slate-200 hover:border-brand-yellow hover:text-brand-yellow text-sm font-bold transition-all">
+          <svg class="w-4 h-4 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+          </svg>
+          070-657 49 48
+        </a>
+
+        <a href="#boka-tid"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-yellow hover:bg-brand-yellowHover text-brand-asphalt font-display font-extrabold text-sm uppercase tracking-wide shadow-yellow-glow hover:-translate-y-0.5 transition-all">
+          <span>Boka tid nu</span>
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Action + Hamburger Button -->
+      <div class="flex items-center gap-2 md:hidden">
+        <a href="#boka-tid"
+          class="px-3.5 py-2 rounded-lg bg-brand-yellow text-brand-asphalt font-display font-extrabold text-xs uppercase tracking-wide">
+          Boka tid
+        </a>
+        <button id="mobile-menu-btn" type="button"
+          class="p-2.5 rounded-lg text-slate-200 hover:text-brand-yellow hover:bg-slate-800 focus:outline-none"
+          aria-label="Öppna meny" aria-expanded="false">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-asphalt border-b border-slate-800 px-4 pt-3 pb-6 space-y-3">
+      <div class="grid grid-cols-1 gap-1">
+        <a href="#tjanster"
+          class="mobile-nav-link px-4 py-3 rounded-xl text-base font-semibold text-white hover:bg-slate-800 flex items-center justify-between">
+          <span>Tjänster</span>
+          <span class="text-brand-yellow">→</span>
+        </a>
+        <a href="#om-oss"
+          class="mobile-nav-link px-4 py-3 rounded-xl text-base font-semibold text-white hover:bg-slate-800 flex items-center justify-between">
+          <span>Om oss</span>
+          <span class="text-brand-yellow">→</span>
+        </a>
+        <a href="#dackguide"
+          class="mobile-nav-link px-4 py-3 rounded-xl text-base font-semibold text-white hover:bg-slate-800 flex items-center justify-between">
+          <span>Däckguide</span>
+          <span class="text-brand-yellow">→</span>
+        </a>
+        <a href="#boka-tid"
+          class="mobile-nav-link px-4 py-3 rounded-xl text-base font-semibold text-white hover:bg-slate-800 flex items-center justify-between">
+          <span>Boka tid</span>
+          <span class="text-brand-yellow">→</span>
+        </a>
+        <a href="#kontakt"
+          class="mobile-nav-link px-4 py-3 rounded-xl text-base font-semibold text-white hover:bg-slate-800 flex items-center justify-between">
+          <span>Kontakt &amp; Hitta hit</span>
+          <span class="text-brand-yellow">→</span>
+        </a>
+      </div>
+
+      <div class="pt-3 border-t border-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <a href="tel:0706574948"
+          class="w-full py-3 px-4 rounded-xl bg-slate-800 text-brand-yellow font-bold text-center flex items-center justify-center gap-2">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          Ring 070-657 49 48
+        </a>
+        <a href="#boka-tid"
+          class="mobile-nav-link w-full py-3 px-4 rounded-xl bg-brand-yellow text-brand-asphalt font-display font-extrabold uppercase text-center">
+          Boka tid nu
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       3. HERO SECTION
+  ====================================================================== -->
+  <section class="relative tread-pattern text-white overflow-hidden border-b-2 border-brand-yellow/60">
+    <!-- Decorative background tire tracks & gradient overlay -->
+    <div class="absolute inset-0 pointer-events-none opacity-10">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="hero-tire-track" width="60" height="60" patternUnits="userSpaceOnUse"
+            patternTransform="rotate(25)">
+            <rect x="8" y="0" width="12" height="22" rx="2" fill="#E5A93C" />
+            <rect x="26" y="15" width="12" height="22" rx="2" fill="#E5A93C" />
+            <rect x="8" y="34" width="12" height="22" rx="2" fill="#E5A93C" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hero-tire-track)" />
+      </svg>
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-asphalt via-brand-asphalt/95 to-brand-dark/85"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+        <!-- Left Column: Hero Copy, CTAs, and Key Badges -->
+        <div class="lg:col-span-7 space-y-6">
+
+          <!-- Top Eyebrow Badge -->
+          <div
+            class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow text-xs sm:text-sm font-bold tracking-wide uppercase">
+            <span class="w-2 h-2 rounded-full bg-brand-yellow"></span>
+            <span>Däck &amp; Fälg • Skifte • Balansering</span>
+          </div>
+
+          <!-- H1 Headline -->
+          <h1 class="font-display font-black text-4xl sm:text-5xl lg:text-6xl uppercase tracking-tight leading-[1.08]">
+            Däckbyte &amp; <span class="text-brand-yellow">Däckservice</span> i Kumla
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-lg sm:text-xl text-slate-300 font-medium leading-relaxed max-w-2xl">
+            Snabbt och säkert hjulskifte på <strong class="text-white font-semibold">Västra Drottninggatan 23</strong>.
+            Vi har öppet <span
+              class="text-brand-yellow font-bold underline decoration-brand-yellow/40 underline-offset-4">07:00–22:00
+              alla dagar i veckan</span>.
+          </p>
+
+          <!-- Key Value Prop Callout -->
+          <div
+            class="p-4 sm:p-5 rounded-2xl bg-slate-900/80 border-l-4 border-brand-yellow/90 backdrop-blur-sm text-slate-200 text-sm sm:text-base leading-relaxed">
+            <span class="font-display font-extrabold text-white">Smidigt däckbyte på dina villkor.</span> Hos Grepp
+            &amp; Gummi i Kumla får du professionellt hjulskifte och balansering med öppettider anpassade efter din
+            vardag – från tidig morgon till sen kväll.
+          </div>
+
+          <!-- Dual CTAs -->
+          <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="#boka-tid" onclick="switchCalService('hjulskifte', true)"
+              class="inline-flex items-center justify-center gap-3 px-7 py-4 rounded-xl bg-brand-yellow hover:bg-brand-yellowHover text-brand-asphalt font-display font-black text-base sm:text-lg uppercase tracking-wide shadow-yellow-glow hover:-translate-y-0.5 transition-all">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>Boka tid online</span>
+            </a>
+
+            <a href="tel:0706574948"
+              class="inline-flex items-center justify-center gap-3 px-7 py-4 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-700 hover:border-brand-yellow/70 font-display font-bold text-base sm:text-lg transition-all">
+              <svg class="w-5 h-5 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span>Ring 070-657 49 48</span>
+            </a>
+          </div>
+
+          <!-- Key Badges / USPs -->
+          <div class="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm font-semibold text-slate-200">
+            <div class="flex items-center gap-2.5 bg-slate-900/60 border border-slate-800 px-3.5 py-2.5 rounded-xl">
+              <span
+                class="w-5 h-5 rounded-full bg-brand-yellow/20 border border-brand-yellow/50 text-brand-yellow flex items-center justify-center font-black text-xs shrink-0">✓</span>
+              <span>Öppet 07–22 alla dagar</span>
+            </div>
+            <div class="flex items-center gap-2.5 bg-slate-900/60 border border-slate-800 px-3.5 py-2.5 rounded-xl">
+              <span
+                class="w-5 h-5 rounded-full bg-brand-yellow/20 border border-brand-yellow/50 text-brand-yellow flex items-center justify-center font-black text-xs shrink-0">✓</span>
+              <span>Snabb service &amp; proffessionellt arbete</span>
+            </div>
+            <div class="flex items-center gap-2.5 bg-slate-900/60 border border-slate-800 px-3.5 py-2.5 rounded-xl">
+              <span
+                class="w-5 h-5 rounded-full bg-brand-yellow/20 border border-brand-yellow/50 text-brand-yellow flex items-center justify-center font-black text-xs shrink-0">✓</span>
+              <span>Centralt i Kumla</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Workshop Sign Replica & Express Slot Preview -->
+        <div class="lg:col-span-5">
+          <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-5 sm:p-6 shadow-2xl space-y-5">
+
+            <!-- Digital Recreation of the Grepp & Gummi Sign in Kumla -->
+            <div
+              class="rounded-2xl overflow-hidden border border-brand-yellow/70 shadow-lg bg-brand-yellow text-brand-asphalt">
+              <!-- Top Yellow Band -->
+              <div class="px-4 py-3 text-center">
+                <div
+                  class="font-display font-black text-2xl sm:text-3xl tracking-tight leading-none text-brand-asphalt">
+                  GREPP &amp; GUMMI
+                </div>
+              </div>
+
+              <!-- Middle Black Band with Wheels, Tread Marks & Phone Number -->
+              <div class="bg-brand-asphalt py-3.5 px-3 relative flex items-center justify-between overflow-hidden">
+                <!-- Left Dual Tires + Yellow Tread -->
+                <div class="flex items-center">
+                  <div
+                    class="w-11 h-11 rounded-full bg-slate-800 border-4 border-slate-600 flex items-center justify-center shadow-md">
+                    <div class="w-6 h-6 rounded-full border-2 border-slate-300 flex items-center justify-center">
+                      <div class="w-2 h-2 rounded-full bg-brand-yellow"></div>
+                    </div>
+                  </div>
+                  <div class="w-6 h-10 -ml-2 sign-tread-stripe opacity-90 transform -skew-x-12 rounded-sm"></div>
+                </div>
+
+                <!-- Center Phone Number -->
+                <a href="tel:0706574948"
+                  class="font-display font-black text-xl sm:text-2xl text-brand-yellow tracking-wider hover:scale-105 transition-transform z-10">
+                  070-657 49 48
+                </a>
+
+                <!-- Right Dual Tires + Yellow Tread -->
+                <div class="flex items-center">
+                  <div class="w-6 h-10 -mr-2 sign-tread-stripe opacity-90 transform skew-x-12 rounded-sm"></div>
+                  <div
+                    class="w-11 h-11 rounded-full bg-slate-800 border-4 border-slate-600 flex items-center justify-center shadow-md">
+                    <div class="w-6 h-6 rounded-full border-2 border-slate-300 flex items-center justify-center">
+                      <div class="w-2 h-2 rounded-full bg-brand-yellow"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Yellow Band -->
+              <div class="px-3 py-2 text-center bg-brand-yellow border-t border-brand-asphalt/10">
+                <p class="font-display font-bold text-xs sm:text-sm tracking-wide text-brand-asphalt">
+                  Däck &amp; Fälg &bull; Skifte &bull; Balansering
+                </p>
+              </div>
+            </div>
+
+            <!-- Quick Next Available Slots Widget -->
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Snabbval – Lediga tider
+                  idag</span>
+                <span
+                  class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400/90 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded-full">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  Mån–Sön 07:00–22:00
+                </span>
+              </div>
+
+              <!-- Quick Service Shortcuts to Cal.com -->
+              <div id="hero-quick-slots" class="grid grid-cols-2 gap-2">
+                <button type="button" onclick="switchCalService('hjulskifte-balansering', true)"
+                  class="col-span-2 py-2.5 px-3 rounded-xl bg-brand-yellow text-brand-asphalt font-display font-extrabold text-xs transition-all flex items-center justify-between group cursor-pointer shadow-yellow-glow">
+                  <span class="flex items-center gap-1.5">
+                    <span>★</span>
+                    <span>Hjulskifte + Balansering</span>
+                  </span>
+                  <span
+                    class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-brand-asphalt text-brand-yellow">Populärast</span>
+                </button>
+                <button type="button" onclick="switchCalService('hjulskifte', true)"
+                  class="py-2.5 px-3 rounded-xl bg-slate-800/90 hover:bg-brand-yellow text-white hover:text-brand-asphalt border border-slate-700 hover:border-brand-yellow font-display font-bold text-xs transition-all flex items-center justify-between group cursor-pointer">
+                  <span>Hjulskifte</span>
+                  <span class="text-[10px] text-slate-400 group-hover:text-brand-asphalt font-medium">Standard</span>
+                </button>
+                <button type="button" onclick="switchCalService('endast-balansering', true)"
+                  class="py-2.5 px-3 rounded-xl bg-slate-800/90 hover:bg-brand-yellow text-white hover:text-brand-asphalt border border-slate-700 hover:border-brand-yellow font-display font-bold text-xs transition-all flex items-center justify-between group cursor-pointer">
+                  <span>Endast Balansering</span>
+                  <span class="text-[10px] text-slate-400 group-hover:text-brand-asphalt font-medium">Justering</span>
+                </button>
+              </div>
+
+              <p class="text-xs text-slate-400 flex items-center justify-between pt-1">
+                <span>📍 Västra Drottninggatan 23, Kumla</span>
+                <a href="#boka-tid" class="text-brand-yellow font-bold hover:underline">Se alla tider →</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       GENEROUS OPENING HOURS BANNER (Key Selling Point)
+  ====================================================================== -->
+  <section class="bg-white border-b border-slate-200 py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+
+        <div class="flex items-center gap-4">
+          <div
+            class="w-12 h-12 rounded-2xl bg-brand-yellow/20 border border-brand-yellow flex items-center justify-center text-brand-asphalt shrink-0">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <h2 class="font-display font-extrabold text-sm uppercase tracking-wider text-brand-asphalt">Öppettider för
+              din vardag</h2>
+            <p class="text-sm text-slate-600">Boka före jobbet, på lunchen eller sent på kvällen – <strong
+                class="text-brand-asphalt">07:00–22:00 alla dagar</strong>.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div
+            class="w-12 h-12 rounded-2xl bg-brand-yellow/20 border border-brand-yellow flex items-center justify-center text-brand-asphalt shrink-0">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <div>
+            <h2 class="font-display font-extrabold text-sm uppercase tracking-wider text-brand-asphalt">Säkerhet &amp;
+              Rätt Moment</h2>
+            <p class="text-sm text-slate-600">Vi kontrollerar alltid däcktryck, mönsterdjup och drar hjulbultarna med
+              rätt moment.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div
+            class="w-12 h-12 rounded-2xl bg-brand-yellow/20 border border-brand-yellow flex items-center justify-center text-brand-asphalt shrink-0">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <h2 class="font-display font-extrabold text-sm uppercase tracking-wider text-brand-asphalt">Snabbt &amp;
+              Smidigt i Kumla</h2>
+            <p class="text-sm text-slate-600">Enkel parkering och snabb hantering direkt på Västra Drottninggatan 23.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       4. SERVICES & PRICING CARDS (Tjänster)
+  ====================================================================== -->
+  <section id="tjanster" class="py-16 sm:py-24 bg-brand-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3">
+        <span
+          class="inline-block px-3.5 py-1 rounded-full bg-brand-yellow/25 text-brand-asphalt font-display font-extrabold text-xs uppercase tracking-widest">
+          Våra Tjänster
+        </span>
+        <h2 class="font-display font-black text-3xl sm:text-4xl uppercase tracking-tight text-brand-asphalt">
+          Komplett Däckservice i Kumla
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          Oavsett om det är dags för säsongens hjulskifte, balansering eller rådgivning kring däck och fälg står
+          vi redo alla dagar mellan 07:00 och 22:00.
+        </p>
+      </div>
+
+      <!-- 4 Structured Service Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+
+        <!-- Card 1: Hjulskifte + Balansering (POPULÄRAST & BÄSTA VALET) -->
+        <article
+          class="bg-white rounded-2xl border-2 border-brand-yellow shadow-card hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-6 group relative">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-14 h-14 rounded-2xl bg-brand-asphalt text-brand-yellow flex items-center justify-center group-hover:bg-brand-yellow group-hover:text-brand-asphalt transition-colors">
+                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                </svg>
+              </div>
+              <span
+                class="text-xs font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full bg-brand-yellow text-brand-asphalt shadow-sm">
+                Populärast
+              </span>
+            </div>
+
+            <h3 class="font-display font-extrabold text-xl text-brand-asphalt mb-2">
+              Hjulskifte + Balansering
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-3">
+              Vårt mest rekommenderade och populära val! Komplett skifte av 4 hjul kombinerat med professionell
+              balansering för vibrationsfri körning och jämnare däckslitage.
+            </p>
+            <div class="mb-4">
+              <button type="button" onclick="switchCalService('endast-balansering', true)"
+                class="group inline-flex items-center gap-1.5 text-xs text-slate-600 bg-slate-100 hover:bg-brand-yellow/20 hover:text-brand-asphalt rounded-lg px-2.5 py-1.5 font-medium transition-colors cursor-pointer border border-transparent hover:border-brand-yellow/40">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow group-hover:scale-125 transition-transform"></span>
+                <span>Klicka här för endast balansering</span>
+                <span class="text-brand-amber font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+              <span>⏱ Ca 30–45 min</span>
+              <span class="text-brand-asphalt font-bold">Komplett däckskifte</span>
+            </div>
+            <button type="button" onclick="switchCalService('hjulskifte-balansering', true)"
+              class="w-full py-3.5 px-4 rounded-xl bg-brand-yellow hover:bg-brand-yellowHover text-brand-asphalt font-display font-extrabold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-yellow-glow">
+              <span>Boka Skifte + Balansering</span>
+              <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 2: Hjulskifte / Däckbyte (Standard) -->
+        <article
+          class="bg-white rounded-2xl border border-slate-200 hover:border-brand-yellow shadow-card hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-6 group">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-14 h-14 rounded-2xl bg-brand-asphalt text-brand-yellow flex items-center justify-center group-hover:bg-brand-yellow group-hover:text-brand-asphalt transition-colors">
+                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="9" />
+                  <circle cx="12" cy="12" r="3" />
+                  <path stroke-linecap="round" d="M12 3v3m0 12v3M3 12h3m12 0h3" />
+                </svg>
+              </div>
+              <span
+                class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-slate-100 text-slate-700">
+                Standard
+              </span>
+            </div>
+
+            <h3 class="font-display font-extrabold text-xl text-brand-asphalt mb-2">
+              Hjulskifte / Däckbyte
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Byte från sommar- till vinterdäck (eller vice versa), noggrann kontroll av däcktryck, mönsterdjup samt
+              korrekt momentdragning.
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+              <span>⏱ Ca 20–30 min</span>
+              <span class="text-brand-asphalt font-bold">Inkl. momentdragning</span>
+            </div>
+            <button type="button" onclick="switchCalService('hjulskifte', true)"
+              class="w-full py-3.5 px-4 rounded-xl bg-brand-asphalt hover:bg-brand-yellow text-white hover:text-brand-asphalt font-display font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 cursor-pointer">
+              <span>Boka Hjulskifte</span>
+              <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 3: Däck & Fälg -->
+        <article
+          class="bg-white rounded-2xl border border-slate-200 hover:border-brand-yellow shadow-card hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-6 group">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-14 h-14 rounded-2xl bg-brand-asphalt text-brand-yellow flex items-center justify-center group-hover:bg-brand-yellow group-hover:text-brand-asphalt transition-colors">
+                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <span
+                class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-slate-100 text-slate-700">
+                Helhetsservice
+              </span>
+            </div>
+
+            <h3 class="font-display font-extrabold text-xl text-brand-asphalt mb-2">
+              Däck &amp; Fälg
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Rådgivning, montering och krängning av däck på fälg, punkteringshjälp samt service för personbilar och
+              lätta fordon.
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+              <span>Ca 30-45 min.</span>
+              <span class="text-brand-asphalt font-bold">Montering &amp; Råd</span>
+            </div>
+            <button type="button" onclick="switchCalService('dack-falg-montering', true)"
+              class="w-full py-3.5 px-4 rounded-xl bg-brand-asphalt hover:bg-brand-yellow text-white hover:text-brand-asphalt font-display font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 cursor-pointer">
+              <span>Boka Däck &amp; Fälg</span>
+              <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 4: Drop-in & Akuttid -->
+        <article
+          class="bg-brand-asphalt text-white rounded-2xl border-2 border-brand-yellow shadow-card hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-6 group">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-14 h-14 rounded-2xl bg-brand-yellow text-brand-asphalt flex items-center justify-center">
+                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <span
+                class="text-xs font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full bg-brand-yellow text-brand-asphalt">
+                07:00 – 22:00
+              </span>
+            </div>
+
+            <h3 class="font-display font-extrabold text-xl text-white mb-2">
+              Drop-in &amp; Akuttid
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-5">
+              Möjlighet till drop-in i mån av tid mellan 07:00 och 22:00 alla dagar. Ring oss direkt för snabbast besked
+              och personlig service!
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-slate-800 space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-300 font-medium">
+              <span>📞 Snabb återkoppling</span>
+              <span class="text-brand-yellow font-bold">Alla dagar</span>
+            </div>
+            <a href="tel:0706574948"
+              class="w-full py-3.5 px-4 rounded-xl bg-brand-yellow hover:bg-brand-yellowHover text-brand-asphalt font-display font-extrabold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span>Ring 070-657 49 48</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       4B. ABOUT SECTION (Om oss)
+  ====================================================================== -->
+  <section id="om-oss" class="py-16 sm:py-20 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+        <!-- Left Content: Local Kumla Workshop Story -->
+        <div class="lg:col-span-7 space-y-5">
+          <span
+            class="inline-block px-3.5 py-1 rounded-full bg-slate-900 text-brand-yellow font-display font-extrabold text-xs uppercase tracking-widest">
+            Om Grepp &amp; Gummi i Kumla
+          </span>
+          <h2 class="font-display font-black text-3xl sm:text-4xl uppercase tracking-tight text-brand-asphalt">
+            Din lokala däckverkstad med öppettider som passar dig
+          </h2>
+          <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
+            Välkommen till <strong>Grepp &amp; Gummi</strong> på <strong>Västra Drottninggatan 23 i Kumla</strong>. Vi
+            gör det enkelt och tryggt att rulla med säkra hjul på vägarna – med snabbt hjulskifte, noggrann balansering
+            och personlig service.
+          </p>
+          <p class="text-slate-600 text-base leading-relaxed">
+            Att få ihop vardagen ska inte behöva krocka med verkstadstider. Därför håller vi öppet <strong>måndag till
+              söndag kl. 07:00–22:00</strong>. Hos oss får du alltid momentdragning, slitage- och tryckkontroll samt ett
+            gott bemötande varje gång du besöker oss.
+          </p>
+
+          <!-- Key Facts Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-3">
+            <div class="p-4 rounded-2xl bg-brand-light border border-slate-200">
+              <span class="block font-display font-black text-2xl sm:text-3xl text-brand-asphalt">07–22</span>
+              <span class="text-xs font-semibold text-slate-600 uppercase tracking-wider">Öppet alla dagar Måndag –
+                Söndag</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content: Checklist & Seasonal Tire Reminder Card -->
+        <div id="dackguide" class="lg:col-span-5 scroll-mt-28">
+          <div class="bg-brand-asphalt text-white rounded-3xl p-6 sm:p-8 border-2 border-slate-800 shadow-xl space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow">Däckguide i Kumla</span>
+                <h3 class="font-display font-extrabold text-xl text-white mt-0.5">Däckguide: Datum &amp; Regler</h3>
+              </div>
+              <div
+                class="w-10 h-10 rounded-xl bg-brand-yellow text-brand-asphalt flex items-center justify-center font-black">
+                ✓
+              </div>
+            </div>
+
+            <ul class="space-y-4 text-sm text-slate-300">
+              <li class="flex items-start gap-3">
+                <span class="px-2 py-0.5 rounded bg-brand-yellow text-brand-asphalt font-bold text-xs shrink-0 mt-0.5">1
+                  Dec – 31 Mar</span>
+                <span><strong>Krav på vinterdäck</strong> om det råder vinterväglag (minst 3,0 mm mönsterdjup).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="px-2 py-0.5 rounded bg-slate-800 text-brand-yellow border border-brand-yellow/40 font-bold text-xs shrink-0 mt-0.5">1
+                  Okt – 15 Apr</span>
+                <span>Tillåtet att använda <strong>dubbdäck</strong> (även utanför datum om vinterväglag råder).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="px-2 py-0.5 rounded bg-slate-800 text-brand-yellow border border-brand-yellow/40 font-bold text-xs shrink-0 mt-0.5">Sommardäck</span>
+                <span>Minsta tillåtna mönsterdjup för sommardäck är <strong>1,6 mm</strong> (vi rekommenderar minst 3 mm
+                  för bra våtgrepp).</span>
+              </li>
+            </ul>
+
+            <div class="pt-2">
+              <a href="#boka-tid" onclick="switchCalService('hjulskifte', true)"
+                class="w-full py-3.5 px-5 rounded-xl bg-brand-yellow hover:bg-brand-yellowHover text-brand-asphalt font-display font-extrabold text-sm uppercase tracking-wide flex items-center justify-center gap-2 transition-all cursor-pointer">
+                <span>Säkra din tid för skifte</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       5. INTERACTIVE BOOKING SECTION (Cal.com Live Embed)
+  ====================================================================== -->
+  <section id="boka-tid" class="py-16 sm:py-24 bg-brand-light relative scroll-mt-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Booking Section Header -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-6">
+        <div>
+          <div class="inline-flex flex-wrap items-center gap-2 mb-3">
+            <span
+              class="px-3.5 py-1 rounded-full bg-brand-yellow/25 text-brand-asphalt font-display font-extrabold text-xs uppercase tracking-widest">
+              Onlinebokning
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 text-brand-yellow font-semibold text-xs border border-slate-800">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <span>Öppet alla dagar 07:00–22:00</span>
+            </span>
+          </div>
+          <h2 class="font-display font-black text-3xl sm:text-4xl uppercase tracking-tight text-brand-asphalt">
+            Boka din tid för däckbyte
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg mt-1 max-w-2xl">
+            Välj vilken däckservice du vill boka nedan. Välj sedan ett ledigt datum och en tid direkt i kalendern
+          </p>
+        </div>
+
+        <!-- Phone Assistance Pill -->
+        <div class="bg-white border border-slate-200/90 rounded-2xl p-3 flex items-center gap-3 shadow-sm shrink-0">
+          <div
+            class="w-10 h-10 rounded-xl bg-brand-asphalt text-brand-yellow flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <div class="text-xs">
+            <span class="block text-slate-500 font-medium">Frågor eller akut tid?</span>
+            <a href="tel:0706574948"
+              class="font-display font-extrabold text-sm text-brand-asphalt hover:text-brand-amber">
+              070-657 49 48
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Selection Tabs -->
+      <div class="mb-6">
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2.5">
+          Välj tjänst:
+        </label>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" role="tablist"
+          aria-label="Välj däckservice för bokning">
+
+          <!-- Tab 1: Hjulskifte + Balansering (POPULÄRAST & BÄSTA VALET - Active default) -->
+          <button type="button" id="tab-btn-hjulskifte-balansering" onclick="switchCalService('hjulskifte-balansering')"
+            class="cal-service-tab p-4 rounded-2xl border-2 text-left transition-all cursor-pointer bg-brand-asphalt text-brand-yellow border-brand-yellow shadow-md"
+            data-service="hjulskifte-balansering" role="tab" aria-selected="true">
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-display font-extrabold text-base">Skifte + Balansering</span>
+              <span class="text-xs font-extrabold px-2 py-0.5 rounded bg-brand-yellow text-brand-asphalt">
+                Populärast</span>
+            </div>
+            <p class="text-xs text-slate-300">Vårt bästa val för vibrationsfri gång (ca 45 min)</p>
+          </button>
+
+          <!-- Tab 2: Hjulskifte -->
+          <button type="button" id="tab-btn-hjulskifte" onclick="switchCalService('hjulskifte')"
+            class="cal-service-tab p-4 rounded-2xl border-2 text-left transition-all cursor-pointer bg-white text-brand-asphalt border-slate-200 hover:border-slate-300"
+            data-service="hjulskifte" role="tab" aria-selected="false">
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-display font-extrabold text-base">Hjulskifte</span>
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-700">Standard</span>
+            </div>
+            <p class="text-xs text-slate-500">Skifte av 4 hjul inkl. kontroll (ca 30 min)</p>
+          </button>
+
+          <!-- Tab 3: Endast Balansering -->
+          <button type="button" id="tab-btn-endast-balansering" onclick="switchCalService('endast-balansering')"
+            class="cal-service-tab p-4 rounded-2xl border-2 text-left transition-all cursor-pointer bg-white text-brand-asphalt border-slate-200 hover:border-slate-300"
+            data-service="endast-balansering" role="tab" aria-selected="false">
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-display font-extrabold text-base">Endast Balansering</span>
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-700">Justering</span>
+            </div>
+            <p class="text-xs text-slate-500">Maskinell balansering av 4 hjul (ca 30 min)</p>
+          </button>
+
+          <!-- Tab 4: Däck & Fälg / Montering -->
+          <button type="button" id="tab-btn-dack-falg-montering" onclick="switchCalService('dack-falg-montering')"
+            class="cal-service-tab p-4 rounded-2xl border-2 text-left transition-all cursor-pointer bg-white text-brand-asphalt border-slate-200 hover:border-slate-300"
+            data-service="dack-falg-montering" role="tab" aria-selected="false">
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-display font-extrabold text-base">Däck &amp; Fälg</span>
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-700">Montering</span>
+            </div>
+            <p class="text-xs text-slate-500">Montering på fälg, punktering &amp; råd (ca 45 min)</p>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Cal.com Embedded Calendar Card Container -->
+      <div class="bg-white rounded-3xl border border-slate-200/90 p-3 sm:p-6 lg:p-7 shadow-card">
+
+        <!-- Panel 1: Hjulskifte + Balansering (Active default) -->
+        <div id="panel-hjulskifte-balansering" class="cal-panel">
+          <div style="width:100%;height:100%;min-height:720px;overflow:auto" id="my-cal-inline-hjulskifte-balansering">
+          </div>
+        </div>
+
+        <!-- Panel 2: Hjulskifte -->
+        <div id="panel-hjulskifte" class="cal-panel hidden">
+          <div style="width:100%;height:100%;min-height:720px;overflow:auto" id="my-cal-inline-hjulskifte"></div>
+        </div>
+
+        <!-- Panel 3: Endast Balansering -->
+        <div id="panel-endast-balansering" class="cal-panel hidden">
+          <div style="width:100%;height:100%;min-height:720px;overflow:auto" id="my-cal-inline-endast-balansering">
+          </div>
+        </div>
+
+        <!-- Panel 4: Däck & Fälg / Montering -->
+        <div id="panel-dack-falg-montering" class="cal-panel hidden">
+          <div style="width:100%;height:100%;min-height:720px;overflow:auto" id="my-cal-inline-dack-falg-montering">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Footer under Cal.com embed -->
+      <div class="mt-4 flex flex-wrap items-center justify-between text-xs text-slate-500 gap-3 px-2">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <span>Bokningsbekräftelse skickas direkt via Cal.com. Betalning med Swish eller kort sker på plats i
+            verkstaden.</span>
+        </div>
+        <a id="cal-direct-link" href="https://cal.com/grepp-gummi/hjulskifte-balansering" target="_blank"
+          rel="noopener noreferrer"
+          class="font-semibold text-brand-asphalt hover:text-brand-amber underline inline-flex items-center gap-1">
+          <span>Öppna i eget fönster</span>
+          <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       6. LOCATION & CONTACT SECTION (Kontakt & Öppettider)
+  ====================================================================== -->
+  <section id="kontakt" class="py-16 sm:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
+
+        <!-- Left Column: Address, Phone, Generous Opening Hours & Directions CTA -->
+        <div
+          class="lg:col-span-5 flex flex-col justify-between bg-brand-asphalt text-white rounded-3xl p-7 sm:p-10 border-2 border-slate-800 shadow-xl space-y-8">
+          <div class="space-y-4">
+            <span
+              class="inline-block px-3.5 py-1 rounded-full bg-brand-yellow text-brand-asphalt font-display font-extrabold text-xs uppercase tracking-widest">
+              Kontakt &amp; Hitta hit
+            </span>
+            <h2 class="font-display font-black text-3xl sm:text-4xl uppercase tracking-tight">
+              Besök verkstaden i Kumla
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Välkommen in till <strong class="text-white">Grepp &amp; Gummi</strong> på Västra Drottninggatan 23. Vi
+              har generösa öppettider alla dagar i veckan så att du alltid kan byta däck när det passar dig bäst.
+            </p>
+          </div>
+
+          <!-- Contact Details List -->
+          <div class="space-y-5">
+            <!-- Address -->
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-2xl bg-brand-yellow/15 border border-brand-yellow/40 text-brand-yellow flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block text-xs font-bold uppercase tracking-wider text-slate-400">Verkstadsadress</span>
+                <p class="font-display font-bold text-lg text-white mt-0.5">Västra Drottninggatan 23</p>
+                <p class="text-sm text-slate-300">692 34 Kumla, Sverige</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-2xl bg-brand-yellow/15 border border-brand-yellow/40 text-brand-yellow flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block text-xs font-bold uppercase tracking-wider text-slate-400">Telefon &amp;
+                  Bokning</span>
+                <a href="tel:0706574948"
+                  class="font-display font-black text-2xl text-brand-yellow hover:underline mt-0.5 inline-block">
+                  070-657 49 48
+                </a>
+                <p class="text-xs text-slate-400">Klicka för att ringa direkt</p>
+              </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-2xl bg-brand-yellow/15 border border-brand-yellow/40 text-brand-yellow flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block text-xs font-bold uppercase tracking-wider text-slate-400">Öppettider</span>
+                <p class="font-display font-bold text-lg text-white mt-0.5">
+                  Måndag – Söndag: <span class="text-brand-yellow">07:00 – 22:00</span>
+                </p>
+                <p class="text-xs text-emerald-400 font-medium">Öppet alla dagar – även helger &amp; kvällar!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons: Google Maps Directions & Copy Address -->
+          <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row gap-3">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=V%C3%A4stra+Drottninggatan+23,+692+34+Kumla,+Sverige"
+              target="_blank" rel="noopener noreferrer"
+              class="flex-1 py-4 px-5 rounded-xl bg-brand-yellow hover:bg-brand-yellowHover text-brand-asphalt font-display font-black text-sm uppercase tracking-wide flex items-center justify-center gap-2 shadow-yellow-glow transition-all">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+              <span>Hitta hit (Google Maps)</span>
+            </a>
+
+            <button type="button" id="copy-address-btn" onclick="copyWorkshopAddress()"
+              class="py-4 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 cursor-pointer">
+              <span id="copy-address-label">Kopiera adress</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: Embedded Interactive Google Map -->
+        <div
+          class="lg:col-span-7 rounded-3xl overflow-hidden border-2 border-slate-200 shadow-card min-h-[400px] sm:min-h-[480px] relative bg-slate-100">
+          <iframe title="Karta till Grepp &amp; Gummi på Västra Drottninggatan 23, Kumla"
+            src="https://maps.google.com/maps?q=V%C3%A4stra%20Drottninggatan%2023,%20692%2034%20Kumla,%20Sweden&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="100%" style="border:0; min-height: 450px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="w-full h-full object-cover"></iframe>
+
+          <!-- Floating Map Overlay Pill -->
+          <div
+            class="absolute bottom-4 left-4 right-4 sm:right-auto bg-brand-asphalt/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl border border-slate-700 shadow-lg flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-brand-yellow shrink-0"></span>
+            <div class="text-xs">
+              <strong class="block font-display uppercase text-brand-yellow">Grepp &amp; Gummi Verkstad</strong>
+              <span>Västra Drottninggatan 23, 692 34 Kumla</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7. FOOTER
+  ====================================================================== -->
+  <footer class="bg-brand-asphalt text-slate-400 border-t-4 border-brand-yellow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+        <!-- Col 1: Brand & Sign Badge -->
+        <div class="space-y-4">
+          <div class="inline-block bg-brand-yellow text-brand-asphalt px-3.5 py-2 rounded-lg">
+            <span class="block font-display font-black text-lg leading-none">GREPP &amp; GUMMI</span>
+            <span class="block text-[10px] font-extrabold uppercase tracking-wider mt-0.5">Däck &amp; Fälg • Skifte •
+              Balansering</span>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Din lokala däckverkstad på Västra Drottninggatan 23 i Kumla. Snabbt och tryggt hjulskifte, balansering samt
+            däckservice med generösa öppettider.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Navigation -->
+        <div>
+          <h3 class="font-display font-extrabold text-sm uppercase tracking-wider text-white mb-4">Snabblänkar</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#tjanster" class="hover:text-brand-yellow transition-colors">Våra tjänster</a></li>
+            <li><a href="#om-oss" class="hover:text-brand-yellow transition-colors">Om Grepp &amp; Gummi</a></li>
+            <li><a href="#dackguide" class="hover:text-brand-yellow transition-colors">Däckguide</a></li>
+            <li><a href="#boka-tid" class="hover:text-brand-yellow transition-colors">Boka tid online</a></li>
+            <li><a href="#kontakt" class="hover:text-brand-yellow transition-colors">Kontakt &amp; Hitta hit</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Opening Hours Reminder -->
+        <div>
+          <h3 class="font-display font-extrabold text-sm uppercase tracking-wider text-white mb-4">Öppettider</h3>
+          <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 space-y-2 text-sm">
+            <div class="flex justify-between text-white font-semibold">
+              <span>Måndag – Fredag</span>
+              <span class="text-brand-yellow">07:00 – 22:00</span>
+            </div>
+            <div class="flex justify-between text-white font-semibold">
+              <span>Lördag – Söndag</span>
+              <span class="text-brand-yellow">07:00 – 22:00</span>
+            </div>
+            <p class="text-xs text-slate-400 pt-2 border-t border-slate-800">
+              Tidsbokning online dygnet runt eller via telefon 070-657 49 48.
+            </p>
+          </div>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div>
+          <h3 class="font-display font-extrabold text-sm uppercase tracking-wider text-white mb-4">Kontakt</h3>
+          <ul class="space-y-2.5 text-sm text-slate-300">
+            <li class="font-semibold text-white">Grepp &amp; Gummi</li>
+            <li>Västra Drottninggatan 23</li>
+            <li>692 34 Kumla, Sverige</li>
+            <li class="pt-1">
+              <a href="tel:0706574948"
+                class="inline-flex items-center gap-2 font-display font-extrabold text-brand-yellow text-base hover:underline">
+                <span>📞 070-657 49 48</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal & Copyright -->
+      <div
+        class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>&copy; <span id="current-year">2026</span> Grepp &amp; Gummi, Kumla. Alla rättigheter förbehållna.</p>
+        <p>Däck &amp; Fälg &bull; Skifte &bull; Balansering &bull; Västra Drottninggatan 23, 692 34 Kumla</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Thumb-Friendly Mobile Bottom CTA Bar -->
+  <div
+    class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-brand-asphalt/95 backdrop-blur-md border-t border-slate-800 p-3 flex items-center gap-3">
+    <a href="tel:0706574948"
+      class="flex-1 py-3 px-3 rounded-xl bg-slate-800 text-brand-yellow font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 border border-slate-700">
+      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+      </svg>
+      <span>070-657 49 48</span>
+    </a>
+    <a href="#boka-tid"
+      class="flex-1 py-3 px-3 rounded-xl bg-brand-yellow text-brand-asphalt font-display font-black text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-yellow-glow">
+      <span>Boka tid nu</span>
+      <span>→</span>
+    </a>
+  </div>
+
+  <!-- =====================================================================
+       JAVASCRIPT & CAL.COM INTEGRATION
+  ====================================================================== -->
+  <!-- Cal.com embed loader script -->
+  <script type="text/javascript">
+    (function (C, A, L) {
+      let p = function (a, ar) { a.q.push(ar); };
+      let d = C.document;
+      C.Cal = C.Cal || function () {
+        let cal = C.Cal;
+        let ar = arguments;
+        if (!cal.loaded) {
+          cal.ns = {};
+          cal.q = cal.q || [];
+          d.head.appendChild(d.createElement("script")).src = A;
+          cal.loaded = true;
+        }
+        if (ar[0] === L) {
+          const api = function () { p(api, arguments); };
+          const namespace = ar[1];
+          api.q = api.q || [];
+          if (typeof namespace === "string") {
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar);
+            p(cal, ["initNamespace", namespace]);
+          } else p(cal, ar);
+          return;
+        }
+        p(cal, ar);
+      };
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+
+    // Initialize all 4 Cal.com namespaces
+    Cal("init", "hjulskifte", { origin: "https://app.cal.com" });
+    Cal("init", "hjulskifte-balansering", { origin: "https://app.cal.com" });
+    Cal("init", "endast-balansering", { origin: "https://app.cal.com" });
+    Cal("init", "dack-falg-montering", { origin: "https://app.cal.com" });
+
+    Cal.config = Cal.config || {};
+    Cal.config.forwardQueryParams = true;
+  </script>
+
+  <script>
+    /**
+     * Grepp & Gummi — Cal.com Service Switcher & Site Utilities
+     */
+    const calInitialized = {};
+    const calDirectUrls = {
+      'hjulskifte': 'https://cal.com/grepp-gummi/hjulskifte',
+      'hjulskifte-balansering': 'https://cal.com/grepp-gummi/hjulskifte-balansering',
+      'endast-balansering': 'https://cal.com/grepp-gummi/endast-balansering',
+      'dack-falg-montering': 'https://cal.com/grepp-gummi/dack-falg-montering'
+    };
+
+    // Lazily mount Cal.com embed into visible container with forced LIGHT THEME
+    function initCalEmbed(serviceKey) {
+      if (calInitialized[serviceKey]) return;
+      calInitialized[serviceKey] = true;
+
+      try {
+        if (window.Cal && window.Cal.ns && window.Cal.ns[serviceKey]) {
+          // Mount inline embed with explicit light theme configuration
+          window.Cal.ns[serviceKey]("inline", {
+            elementOrSelector: "#my-cal-inline-" + serviceKey,
+            config: {
+              layout: "month_view",
+              useSlotsViewOnSmallScreen: "true",
+              theme: "light"
+            },
+            calLink: "grepp-gummi/" + serviceKey + "?theme=light",
+          });
+
+          // Force light UI theme and brand accents
+          window.Cal.ns[serviceKey]("ui", {
+            theme: "light",
+            hideEventTypeDetails: false,
+            layout: "month_view",
+            styles: {
+              branding: {
+                brandColor: "#161A20"
+              }
+            }
+          });
+        }
+      } catch (err) {
+        console.warn('[Cal.com mount notice]:', err);
+      }
+    }
+
+    // Switch active service tab and display its Cal.com calendar
+    function switchCalService(serviceKey, shouldScroll = false) {
+      // 1. Update tab styling
+      document.querySelectorAll('.cal-service-tab').forEach((tab) => {
+        const isCurrent = tab.dataset.service === serviceKey;
+        tab.setAttribute('aria-selected', String(isCurrent));
+        const badge = tab.querySelector('.text-xs.font-bold');
+
+        if (isCurrent) {
+          tab.className = 'cal-service-tab p-4 rounded-2xl border-2 text-left transition-all cursor-pointer bg-brand-asphalt text-brand-yellow border-brand-yellow shadow-md';
+          const p = tab.querySelector('p');
+          if (p) p.className = 'text-xs text-slate-300';
+          if (badge) {
+            if (tab.dataset.service === 'hjulskifte-balansering') {
+              badge.className = 'text-xs font-extrabold px-2 py-0.5 rounded bg-brand-yellow text-brand-asphalt';
+            } else {
+              badge.className = 'text-xs font-bold px-2 py-0.5 rounded bg-brand-yellow/20 text-brand-yellow';
+            }
+          }
+        } else {
+          tab.className = 'cal-service-tab p-4 rounded-2xl border-2 text-left transition-all cursor-pointer bg-white text-brand-asphalt border-slate-200 hover:border-slate-300';
+          const p = tab.querySelector('p');
+          if (p) p.className = 'text-xs text-slate-500';
+          if (badge) {
+            badge.className = 'text-xs font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-700';
+          }
+        }
+      });
+
+      // 2. Toggle panels
+      document.querySelectorAll('.cal-panel').forEach((panel) => {
+        if (panel.id === 'panel-' + serviceKey) {
+          panel.classList.remove('hidden');
+        } else {
+          panel.classList.add('hidden');
+        }
+      });
+
+      // 3. Update direct URL link
+      const directLink = document.getElementById('cal-direct-link');
+      if (directLink && calDirectUrls[serviceKey]) {
+        directLink.href = calDirectUrls[serviceKey];
+      }
+
+      // 4. Initialize Cal.com embed for this service
+      initCalEmbed(serviceKey);
+
+      // 5. Trigger resize event so Cal.com recalculates iframe height
+      setTimeout(() => {
+        window.dispatchEvent(new Event('resize'));
+      }, 60);
+
+      // 6. Smooth scroll to booking section if requested
+      if (shouldScroll) {
+        const target = document.getElementById('boka-tid');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+
+    // Update live open/closed badge in utility bar (Open 07:00 - 22:00 every day)
+    function updateLiveOpenStatus() {
+      const now = new Date();
+      const hour = now.getHours();
+      const dot = document.getElementById('open-status-dot');
+      const text = document.getElementById('open-status-text');
+      if (!dot || !text) return;
+
+      if (hour >= 7 && hour < 22) {
+        dot.className = 'relative inline-block w-2 h-2 rounded-full bg-emerald-400 live-dot';
+        text.className = 'font-medium text-emerald-400/90';
+        text.textContent = 'Öppet nu (07:00–22:00)';
+      } else {
+        dot.className = 'relative inline-block w-2 h-2 rounded-full bg-amber-400';
+        text.className = 'font-medium text-amber-300';
+        text.textContent = 'Öppnar kl. 07:00 imorgon';
+      }
+    }
+
+    // Copy workshop address to clipboard
+    function copyWorkshopAddress() {
+      const address = 'Västra Drottninggatan 23, 692 34 Kumla';
+      const tempInput = document.createElement('textarea');
+      tempInput.value = address;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand('copy');
+        const label = document.getElementById('copy-address-label');
+        if (label) {
+          label.textContent = '✓ Adress kopierad!';
+          setTimeout(() => { label.textContent = 'Kopiera adress'; }, 2500);
+        }
+      } catch (e) {
+        console.error('Kunde inte kopiera adress:', e);
+      }
+      document.body.removeChild(tempInput);
+    }
+
+    // Initialize everything on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', () => {
+      // Dynamic footer year
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // Realtime open status
+      updateLiveOpenStatus();
+
+      // Mobile Hamburger Menu Toggle
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const iconOpen = document.getElementById('menu-icon-open');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.toggle('hidden');
+          menuBtn.setAttribute('aria-expanded', String(!isHidden));
+          if (iconOpen) iconOpen.classList.toggle('hidden', !isHidden);
+          if (iconClose) iconClose.classList.toggle('hidden', isHidden);
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            if (iconOpen) iconOpen.classList.remove('hidden');
+            if (iconClose) iconClose.classList.add('hidden');
+          });
+        });
+      }
+
+      // Initialize default active Cal.com service (Hjulskifte)
+      switchCalService('hjulskifte-balansering', false);
+    });
+  </script>
+</body>
+
+</html>
